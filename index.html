@@ -6,13 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-        <a href="#">
-            <span>E</span> Elegant
-        </a>
+    <a href="#">
+        <span>E</span> Elegant
+    </a>
 </header>
 
 <div class="topcontainer">
@@ -37,24 +39,41 @@
         littera gothica, quam nunc putamus parum claram,
         anteposuerit litterarum formas humanitatis per seacula quarta decima
         et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum. <br>
-        <a href="#">
+        <button id="opener">
             Read More About Us
-        </a><br>
-        <span class="aboutsmalltitle">Who we Do</span><br>
-        <span class="aboutbigtitle">Show Your Amazing Work</span><br>
+        </button>
+        <br>
+    <div id="dialog" title="" class="dialogWindow">
+        <h5>forgot your password?</h5>
+        <form><h6>ENTER YOUR<br>
+            EMAIL</h6><input name="" type="text" id=""/>
+
+        </form>
+        <a href="#" id="resetpassword"> reset password
+
+        </a>
+        <p>OR</p>
+        <a href="#" id="facebook"> f log in using facebook
+
+        </a>
+
+    </div>
+    <p>
+    <span class="aboutsmalltitle">Who we Do</span><br>
+    <span class="aboutbigtitle">Show Your Amazing Work</span><br>
     </p>
 
 </div>
 <section>
     <div class="imagebox">
-    <div class="smallimg"><a href="#"><img src="images/smallimg1.jpg" alt=""></a></div>
-    <div class="smallimg"><a href="#"><img src="images/smallimg2.jpg" alt=""></a></div>
-    <div class="smallimg"><a href="#"><img src="images/smallimg3.jpg" alt=""></a></div>
-    <div class="smallimg"><a href="#"><img src="images/smallimg4.jpg" alt=""></a></div>
-    <div class="smallimg"><a href="#"><img src="images/smallimg5.jpg" alt=""></a></div>
-    <div class="smallimg"><a href="#"><img src="images/smallimg6.jpg" alt=""></a></div>
-    <div class="smallimg"><a href="#"><img src="images/smallimg7.jpg" alt=""></a></div>
-    <div class="smallimg"><a href="#"><img src="images/smallimg8.jpg" alt=""></a></div>
+        <div class="smallimg"><a href="#"><img src="images/smallimg1.jpg" alt=""></a></div>
+        <div class="smallimg"><a href="#"><img src="images/smallimg2.jpg" alt=""></a></div>
+        <div class="smallimg"><a href="#"><img src="images/smallimg3.jpg" alt=""></a></div>
+        <div class="smallimg"><a href="#"><img src="images/smallimg4.jpg" alt=""></a></div>
+        <div class="smallimg"><a href="#"><img src="images/smallimg5.jpg" alt=""></a></div>
+        <div class="smallimg"><a href="#"><img src="images/smallimg6.jpg" alt=""></a></div>
+        <div class="smallimg"><a href="#"><img src="images/smallimg7.jpg" alt=""></a></div>
+        <div class="smallimg"><a href="#"><img src="images/smallimg8.jpg" alt=""></a></div>
     </div>
 </section>
 <div class="people">
@@ -69,8 +88,9 @@
     <div class="headicons">
         <div class="smallheadicon">
             <div class="smallimg"><img src="images/man1.jpg" alt="icon"></div>
-            <p> <span>ceo</span>
-                <span>Tobias Schneider</span>
+            <h2>ceo</h2>
+            <h3>Tobias Schneider</h3>
+            <p>
                 Lorem ipsum dolor sit amet,
                 conse tetuer adi piscing elit,
                 sed diam nonummy nibh euismod
@@ -78,16 +98,70 @@
             </p>
 
         </div>
-        <div>
+        <div class="smallheadicon">
+            <div class="smallimg"><img src="images/man2.jpg" alt="icon"></div>
+            <h2>designer</h2>
+            <h3>Jack Knife</h3>
+            <p>
+                Lorem ipsum dolor sit amet,
+                conse tetuer adi piscing elit,
+                sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore.
+            </p>
 
         </div>
-        <div>
+        <div class="smallheadicon">
+            <div class="smallimg"><img src="images/man3.jpg" alt="icon"></div>
+            <h2>developer</h2>
+            <h3>Ricki Hall</h3>
+            <p>
+                Lorem ipsum dolor sit amet,
+                conse tetuer adi piscing elit,
+                sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore.
+            </p>
 
         </div>
 
     </div>
 
-</div>
+    <p>
+        <span class="aboutsmalltitle">Last Post</span><br>
+        <span class="aboutbigtitle">We Like To Write</span><br>
+    </p>
+    <div class="liketowrite">
+        <img src="images/writeicon.jpg" alt="icon">
+        <p>
+        <h2>14 September 2014</h2>
+        <h3>Change Your Space</h3>
+        Typi non habent claritatem insitam;
+        est usus legentis in iis qui facit
+        eorum claritatem. Investigationes
+        demonstraverunt lectores.
+        </p>
+    </div>
 
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#dialog").dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+
+        $("#opener").on("click", function () {
+            $("#dialog").dialog("open");
+        });
+    });
+</script>
 </body>
 </html>
