@@ -1,11 +1,14 @@
-@import url("//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
-@import url("//resources/demos/style.css");
-@import url(owl.carousel.css);
-@import url(owl.theme.default.css);
-@import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
+@import url('//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+@import url('//resources/demos/style.css');
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+
+
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 header {
   background-color: transparent;
@@ -13,19 +16,22 @@ header {
   max-width: 1280px;
   left: 300px;
   top: 10px;
-  z-index: 2; }
+  z-index: 2;
+}
 
-header a {
+header a{
   font-size: 22px;
   color: white;
   display: inline-block;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 header a span {
   padding: 16px;
   border: solid white 1px;
-  border-radius: 32px; }
+  border-radius: 32px;
+}
 
 .topcontainer {
   position: relative;
@@ -37,7 +43,8 @@ header a span {
   min-height: 699px;
   display: flex;
   justify-content: space-around;
-  margin: auto; }
+  margin: auto;
+}
 
 .topcontainer2 {
   position: relative;
@@ -49,7 +56,8 @@ header a span {
   margin: auto;
   min-height: 699px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .topcontainer3 {
   position: relative;
@@ -61,63 +69,75 @@ header a span {
   margin: auto;
   min-height: 699px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .topcontainer h1, .topcontainer2 h1, .topcontainer3 h1 {
   align-self: center;
   color: white;
   font-size: 80px;
-  text-align: center; }
+  text-align: center;
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot{
   position: absolute;
   bottom: 24px;
   left: 600px;
   background-image: none;
   width: 80px;
-  height: 41px; }
+  height: 41px;
+}
 
 .owl-dot {
   background-position: 0;
-  text-indent: 0; }
+  text-indent: 0;
+}
 
 .owl-dot:active {
   background-position: 0;
-  text-indent: 0; }
+  text-indent: 0;
+}
 
 .owl-dot:before {
   color: white;
   content: "\f111";
   font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
+  font-weight: 900;
+}
 
 .owl-dot:active:before {
   color: white;
   content: "\f111";
   font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
+  font-weight: 900;
+}
 
 .aboutcontainer {
   padding-top: 81px;
   max-width: 760px;
-  margin: auto; }
+  margin: auto;
+}
 
 .aboutcontainer p {
   text-align: center;
   margin-bottom: 62px;
   line-height: 32px;
   font-size: 18px;
-  padding-bottom: 92px; }
+  padding-bottom: 92px;
+}
 
 .aboutcontainer .aboutsmalltitle {
   color: #d4af37;
   text-transform: uppercase;
-  font-size: 13px; }
+  font-size: 13px;
+}
 
 .aboutcontainer .aboutbigtitle {
   color: #021725;
   font-size: 44px;
-  line-height: 89px; }
+  line-height: 89px;
+}
 
 .aboutcontainer button {
   margin-top: 52px;
@@ -131,88 +151,105 @@ header a span {
   border: solid 1px black;
   margin-bottom: 80px;
   background-color: white;
-  border-radius: 2px; }
+  border-radius: 2px;
+}
 
 section {
   max-width: 1280px;
-  margin: auto; }
-
-section .imagebox {
+  margin: auto;
+}
+section .imagebox{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 102px; }
+  margin-bottom: 102px;
+}
 
 section .imagebox .smallimg {
-  margin-left: 2px; }
+  margin-left: 2px;
+}
 
-.smallimg img {
+.smallimg img{
   width: 100%;
-  display: block; }
+  display: block;
+}
 
-section .imagebox .smallimg a {
+section .imagebox .smallimg a{
   display: inline-block;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .people {
   max-width: 757px;
-  margin: auto; }
+  margin: auto;
+}
 
 .people p {
   text-align: center;
   margin-bottom: 50px;
   line-height: 32px;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .people .aboutsmalltitle {
   color: #d4af37;
   text-transform: uppercase;
-  font-size: 13px; }
+  font-size: 13px;
+}
 
 .people .aboutbigtitle {
   color: #021725;
   font-size: 44px;
-  line-height: 89px; }
+  line-height: 89px;
+}
 
 .smallheadicon {
   background-color: #f9f9f9;
-  max-width: 244px; }
+  max-width: 244px;
+}
 
 .people .headicons .smallheadicon p {
   text-align: left;
   padding: 20px 0 47px 17px;
   font-size: 13px;
-  line-height: 23px; }
+  line-height: 23px;
+}
 
 .people .headicons .smallheadicon h2 {
   padding: 20px 0 5px 17px;
   font-size: 13px;
   color: #d4af37;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .people .headicons .smallheadicon h3 {
   padding: 20px 0 15px 17px;
   font-size: 21px;
-  color: #021725; }
+  color: #021725;
+}
 
 .people .headicons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 165px; }
+  margin-bottom: 165px;
+}
 
 .liketowrite {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 84px; }
+  margin-bottom: 84px;
+}
 
 .liketowrite p {
   background-color: #f9f9f9;
   padding-top: 20px;
   padding-left: 20px;
-  text-align: left; }
+  text-align: left;
+}
 
 .liketowrite img {
   width: 100%;
-  display: block; }
+  display: block;
+}
 
 .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
   position: absolute;
@@ -220,7 +257,8 @@ section .imagebox .smallimg a {
   width: 700px !important;
   top: 1045px;
   left: 455.5px;
-  display: block; }
+  display: block;
+}
 
 .dialogWindow h5 {
   text-transform: uppercase;
@@ -229,7 +267,8 @@ section .imagebox .smallimg a {
   font-size: 24px;
   text-align: center;
   line-height: 100px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 .dialogWindow form input {
   width: 384px;
@@ -238,23 +277,27 @@ section .imagebox .smallimg a {
   color: black;
   background-color: white;
   border: none;
-  padding-left: 10px; }
+  padding-left: 10px;
+}
 
 .dialogWindow form {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 .dialogWindow h6 {
   text-align: center;
   font-size: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .dialogWindow p {
   text-align: center;
   margin-bottom: 30px;
   font-size: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .dialogWindow a {
   text-align: center;
@@ -265,14 +308,16 @@ section .imagebox .smallimg a {
   border: none;
   border-radius: 2px;
   margin-bottom: 30px;
-  margin-left: 80px; }
+  margin-left: 80px;
+}
 
 .dialogWindow #resetpassword {
   line-height: 60px;
   color: black;
   text-transform: uppercase;
   font-size: 24px;
-  background-image: url("../images/resetpassbg.jpg"); }
+  background-image: url("../images/resetpassbg.jpg");
+}
 
 .dialogWindow #facebook {
   line-height: 60px;
@@ -280,6 +325,5 @@ section .imagebox .smallimg a {
   text-transform: uppercase;
   font-size: 24px;
   background-image: url("../images/fblogbg.jpg");
-  margin-bottom: 100px; }
-
-/*# sourceMappingURL=style.css.map */
+  margin-bottom: 100px;
+}
