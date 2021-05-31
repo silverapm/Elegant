@@ -5,6 +5,12 @@
 @import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,7 +25,7 @@ header {
   z-index: 2;
 }
 
-header a{
+header a {
   font-size: 22px;
   color: white;
   display: inline-block;
@@ -59,6 +65,7 @@ header a span {
   justify-content: space-around;
 }
 
+
 .topcontainer3 {
   position: relative;
   z-index: 1;
@@ -80,36 +87,36 @@ header a span {
 
 }
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot{
-  position: absolute;
-  bottom: 24px;
-  left: 600px;
-  background-image: none;
-  width: 80px;
-  height: 41px;
+.owl-carousel {
+  position: relative;
 }
 
-.owl-dot {
-  background-position: 0;
-  text-indent: 0;
+.owl-carousel .owl-dots {
+  width: 100%;
+  text-align: center;
+  margin-top: -50px;
 }
 
-.owl-dot:active {
-  background-position: 0;
-  text-indent: 0;
+.owl-carousel .owl-dots .owl-dot {
+  font-size: 10px;
+  margin: 7px;
+  position: relative;
+  color: #b0e8e6;
+  @include max-screen(414px) {
+    top: 50px;
+    left: 180px;
+  }
 }
 
-.owl-dot:before {
-  color: white;
+.owl-carousel .owl-dots .owl-dot.active {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.owl-carousel .owl-dots .owl-dot:before {
+  color: #ffffff;
   content: "\f111";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-}
-
-.owl-dot:active:before {
-  color: white;
-  content: "\f111";
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
@@ -162,7 +169,8 @@ section {
   max-width: 1280px;
   margin: auto;
 }
-section .imagebox{
+
+section .imagebox {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 102px;
@@ -172,12 +180,12 @@ section .imagebox .smallimg {
   margin-left: 2px;
 }
 
-.smallimg img{
+.smallimg img {
   width: 100%;
   display: block;
 }
 
-section .imagebox .smallimg a{
+section .imagebox .smallimg a {
   display: inline-block;
   text-decoration: none;
 }
@@ -366,7 +374,7 @@ section .imagebox .smallimg a{
   font-family: 'Open Sans', sans-serif;
 }
 
-.liketowrite .writetext a{
+.liketowrite .writetext a {
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -418,7 +426,7 @@ section .imagebox .smallimg a{
   text-align: center;
 }
 
-.contactscontainer .contacts span{
+.contactscontainer .contacts span {
   color: #505d68;
   font-size: 13px;
   text-transform: uppercase;
@@ -426,7 +434,7 @@ section .imagebox .smallimg a{
   font-family: 'Open Sans', sans-serif;
 }
 
-.contactscontainer .contacts p{
+.contactscontainer .contacts p {
   line-height: 31px;
   color: #505d68;
   font-size: 19px;
@@ -438,7 +446,7 @@ footer {
   background-color: #eeeeee;
 }
 
-footer  .footercontainer {
+footer .footercontainer {
   display: flex;
   justify-content: space-between;
 }

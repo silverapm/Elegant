@@ -70,32 +70,32 @@ header a span {
   font-size: 80px;
   text-align: center; }
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
-  position: absolute;
-  bottom: 24px;
-  left: 600px;
-  background-image: none;
-  width: 80px;
-  height: 41px; }
+.owl-carousel {
+  position: relative; }
 
-.owl-dot {
-  background-position: 0;
-  text-indent: 0; }
+.owl-carousel .owl-dots {
+  width: 100%;
+  text-align: center;
+  margin-top: -50px; }
 
-.owl-dot:active {
-  background-position: 0;
-  text-indent: 0; }
+.owl-carousel .owl-dots .owl-dot {
+  font-size: 10px;
+  margin: 7px;
+  position: relative;
+  color: #b0e8e6; }
+  @media screen and (max-width: 414px) {
+    .owl-carousel .owl-dots .owl-dot {
+      top: 50px;
+      left: 180px; } }
 
-.owl-dot:before {
-  color: white;
+.owl-carousel .owl-dots .owl-dot.active {
+  color: #ffffff;
+  font-size: 15px; }
+
+.owl-carousel .owl-dots .owl-dot:before {
+  color: #ffffff;
   content: "\f111";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
-
-.owl-dot:active:before {
-  color: white;
-  content: "\f111";
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900; }
 
 .aboutcontainer {
