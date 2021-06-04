@@ -98,12 +98,12 @@ header a span {
   font-family: "Font Awesome 5 Free";
   font-weight: 900; }
 
-.aboutcontainer {
+.aboutcontainer, .containerAboutUs {
   padding-top: 81px;
-  max-width: 760px;
+  max-width: 768px;
   margin: auto; }
 
-.aboutcontainer p {
+.aboutcontainer p, .containerAboutUs p {
   text-align: center;
   margin-bottom: 62px;
   line-height: 32px;
@@ -389,5 +389,38 @@ footer .footercontainer {
   font-size: 16px;
   line-height: 93px;
   font-family: 'Open Sans', sans-serif; }
+
+.imgcontainerAboutUs .imgcontainerAboutUsPar {
+  max-width: 300px;
+  height: 300px;
+  background-color: #d3b000;
+  width: 50%; }
+
+.imgcontainerAboutUs .imgcontainerAboutUsPar p {
+  font: 25px/32px 'Open Sans';
+  color: white;
+  text-align: left; }
+
+.imgcontainerAboutUsImg {
+  width: 50%;
+  max-width: 462px;
+  max-height: 300px;
+  display: block; }
+
+.imgcontainerAboutUs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.imgcontainerAboutUsPar2 {
+  max-width: 462px;
+  max-height: 300px;
+  width: 50%; }
+
+.imgcontainerAboutUsTel {
+  max-width: 300px;
+  height: 300px;
+  background-color: #000000;
+  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

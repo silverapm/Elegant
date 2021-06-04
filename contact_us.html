@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <a href="#">
+        <span>E</span> Elegant
+    </a>
+</header>
+<div class="owl-carousel">
+    <div class="topcontainer">
+        <h1>
+            Say Haloa to your Portfolio
+        </h1>
+    </div>
+    <div class="topcontainer2">
+        <h1>
+            Say Haloa to your Portfolio
+        </h1>
+    </div>
+    <div class="topcontainer3">
+        <h1>
+            Say Haloa to your Portfolio
+        </h1>
+    </div>
+</div>
+<section class="containerAboutUs">
+    <p>
+    <span class="aboutsmalltitle">
+        This is it<br>
+    </span>
+
+    <span class="aboutbigtitle">
+        Contact US
+    </span></p>
+    <div class="imgcontainerAboutUs">
+        <div class="imgcontainerAboutUsPar">
+            <p>
+                Rua Serpa Pinto,<br>
+                Lisbon, Portugal
+            </p>
+        </div>
+        <div class="imgcontainerAboutUsImg">
+            <img src="images/abountUscontent1.jpg" alt="scr1">
+        </div>
+        <div class="imgcontainerAboutUsPar2">
+
+        </div>
+        <div class="imgcontainerAboutUsTel">
+
+        </div>
+
+    </div>
+
+</section>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(function () {
+        $("#dialog").dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+
+        $("#opener").on("click", function () {
+            $("#dialog").dialog("open");
+        });
+    });
+</script>
+</body>
+</html>
