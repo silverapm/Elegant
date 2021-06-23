@@ -424,7 +424,7 @@ section .imagebox .smallimg a {
   text-align: center;
 }
 
-.linkalone #linkMore {
+.linkalone #linkMore, .btndefault {
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -527,7 +527,7 @@ footer .footercontainer {
     width: 270px;
     height: 270px;
     padding: 30px 0 0 30px;
-    p{
+    p {
       color: white;
       text-align: left;
       font: 25px/32px 'Open Sans';
@@ -539,4 +539,49 @@ footer .footercontainer {
 .contactbtn {
   margin-top: 80px;
   margin-bottom: 90px;
+}
+
+.projectsection {
+  max-width: 1150px;
+  background-color: #f9f9f9;
+  padding: 60px;
+  h3 {
+    font: 45px/65px 'open sans';
+    font-weight: 600;
+  }
+  .projectsection__par {
+    margin-top: 130px;
+    margin-bottom: 100px;
+    max-width: 665px;
+    p {
+      text-align: left;
+      font: 20px/32px 'open sans';
+      font-weight: 300;
+    }
+  }
+  img {
+    margin-bottom: 20px;
+  }
+}
+.btnbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px 0 60px;
+  .linkalone{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font: 15px/32px 'open sans';
+    font-weight: 300;
+    opacity: 0.6;
+    text-transform: uppercase;
+  }
+}
+
+.btndefault {
+  border-color: rgba(0, 0, 0, 0.4);
 }

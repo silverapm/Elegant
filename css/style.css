@@ -353,7 +353,7 @@ section .imagebox .smallimg a {
   margin-bottom: 162px;
   text-align: center; }
 
-.linkalone #linkMore {
+.linkalone #linkMore, .btndefault {
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -450,5 +450,42 @@ footer .footercontainer {
 .contactbtn {
   margin-top: 80px;
   margin-bottom: 90px; }
+
+.projectsection {
+  max-width: 1150px;
+  background-color: #f9f9f9;
+  padding: 60px; }
+  .projectsection h3 {
+    font: 45px/65px 'open sans';
+    font-weight: 600; }
+  .projectsection .projectsection__par {
+    margin-top: 130px;
+    margin-bottom: 100px;
+    max-width: 665px; }
+    .projectsection .projectsection__par p {
+      text-align: left;
+      font: 20px/32px 'open sans';
+      font-weight: 300; }
+  .projectsection img {
+    margin-bottom: 20px; }
+
+.btnbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px 0 60px; }
+  .btnbox .linkalone {
+    margin-left: 0;
+    margin-right: 0; }
+  .btnbox a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font: 15px/32px 'open sans';
+    font-weight: 300;
+    opacity: 0.6;
+    text-transform: uppercase; }
+
+.btndefault {
+  border-color: rgba(0, 0, 0, 0.4); }
 
 /*# sourceMappingURL=style.css.map */
