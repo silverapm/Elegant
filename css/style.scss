@@ -17,26 +17,47 @@
 }
 
 header {
-  background-color: transparent;
-  position: absolute;
+  .nav {
+    img {
+      margin: 10px 0 0 50px;
+    }
+
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+
+    ul {
+      margin-top: 10px;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 25px;
+
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          font: 16px/44px 'Open Sans';
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+        a:hover {
+          color: #2b669a;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.container {
   max-width: 1280px;
-  left: 300px;
-  top: 10px;
-  z-index: 2;
-}
-
-header a {
-  font-size: 22px;
-  color: white;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-header a span {
-  padding: 16px;
-  border: solid white 1px;
-  border-radius: 32px;
+  margin: auto;
 }
 
 .topcontainer {
@@ -89,6 +110,9 @@ header a span {
 
 .owl-carousel {
   position: relative;
+  background-color: rgba(12,78,154,.6);
+  padding-bottom: 2px;
+
 }
 
 .owl-carousel .owl-dots {
@@ -110,7 +134,7 @@ header a span {
 
 .owl-carousel .owl-dots .owl-dot.active {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .owl-carousel .owl-dots .owl-dot:before {
@@ -133,6 +157,14 @@ header a span {
   font-size: 18px;
   padding-bottom: 92px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+  display: none;
+}
+
+.ui-dialog .ui-dialog-content {
+  padding: 0;
 }
 
 .aboutsmalltitle {
@@ -342,7 +374,7 @@ section .imagebox .smallimg a {
   text-transform: uppercase;
   font-size: 24px;
   background-image: url("../images/fblogbg.jpg");
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .liketowrite .writetext {
@@ -458,41 +490,25 @@ footer .footercontainer {
   font-family: 'Open Sans', sans-serif;
 }
 
-.imgcontainerAboutUs .imgcontainerAboutUsPar {
-  max-width: 300px;
-  height: 300px;
-  background-color: #d3b000;
-  width: 50%;
-}
-
-.imgcontainerAboutUs .imgcontainerAboutUsPar p {
-  font: 25px/32px 'Open Sans';
-  color: white;
-  text-align: left;
-}
-
-.imgcontainerAboutUsImg {
-  width: 50%;
-  max-width: 462px;
-  max-height: 300px;
-  display: block;
-}
-
-.imgcontainerAboutUs {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.imgcontainerAboutUsPar2 {
-  max-width: 462px;
-  max-height: 300px;
-  width: 50%;
-}
-
-.imgcontainerAboutUsTel {
-  max-width: 300px;
-  height: 300px;
-  background-color: #000000;
-  width: 50%;
+.img-title {
+  .img1 {
+    content: "";
+    background-image: url("../images/abountUscontent1.jpg");
+  }
+  par1 {
+    background-color: #d3b000;
+  }
+  par2 {
+    padding: 47px 0 47px;
+    background-color: #d3b000;
+    width: 460px;
+  }
+  par3 {
+    background-color: #212121;
+  }
+  p {
+    padding: 30px 0 30px;
+    width: 300px;
+    height: 300px;
+  }
 }
