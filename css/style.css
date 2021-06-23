@@ -409,20 +409,46 @@ footer .footercontainer {
   line-height: 93px;
   font-family: 'Open Sans', sans-serif; }
 
-.img-title .img1 {
-  content: "";
-  background-image: url("../images/abountUscontent1.jpg"); }
-.img-title par1 {
-  background-color: #d3b000; }
-.img-title par2 {
-  padding: 47px 0 47px;
-  background-color: #d3b000;
-  width: 460px; }
-.img-title par3 {
-  background-color: #212121; }
-.img-title p {
-  padding: 30px 0 30px;
-  width: 300px;
-  height: 300px; }
+.img-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .img-title .img1 {
+    content: "";
+    background-image: url("../images/abountUscontent1.jpg");
+    width: 460px;
+    height: 300px; }
+  .img-title .par1 {
+    background-color: #d3b000;
+    width: 240px;
+    height: 270px;
+    padding: 30px 30px 0 30px; }
+    .img-title .par1 p {
+      color: white;
+      text-align: left;
+      font: 25px/32px 'Open Sans';
+      font-weight: 300; }
+  .img-title .par2 {
+    padding: 47px 30px 0 47px;
+    background-color: #f9f9f9;
+    width: 387px;
+    height: 253px; }
+    .img-title .par2 p {
+      text-align: left;
+      font: 20px/32px 'Open Sans'; }
+  .img-title .par3 {
+    background-color: #212121;
+    width: 270px;
+    height: 270px;
+    padding: 30px 0 0 30px; }
+    .img-title .par3 p {
+      color: white;
+      text-align: left;
+      font: 25px/32px 'Open Sans';
+      font-weight: 300; }
+
+.contactbtn {
+  margin-top: 80px;
+  margin-bottom: 90px; }
 
 /*# sourceMappingURL=style.css.map */
