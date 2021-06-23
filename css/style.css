@@ -488,4 +488,38 @@ footer .footercontainer {
 .btndefault {
   border-color: rgba(0, 0, 0, 0.4); }
 
+.titlesection {
+  padding-top: 64px;
+  max-width: 1025px;
+  margin: auto;
+  background-color: #f9f9f9; }
+  .titlesection .titlesection__post {
+    max-width: 600px;
+    background-color: white;
+    padding: 30px; }
+    .titlesection .titlesection__post .titlesection__post__first .btndefault a {
+      text-decoration: none;
+      color: black;
+      font: 16px 'Open Sans';
+      font-weight: 600; }
+    .titlesection .titlesection__post .titlesection__post__first h3 {
+      margin-top: 30px;
+      font: 30px/50px 'Open Sans';
+      font-weight: 300;
+      color: black; }
+    .titlesection .titlesection__post .titlesection__post__first p {
+      font: 16px/25px 'Open Sans';
+      font-weight: 300;
+      color: #021725; }
+      .titlesection .titlesection__post .titlesection__post__first p span {
+        font: 15px/50px 'Open Sans';
+        color: #d3b000; }
+
+.blogcontainer {
+  margin-top: 75px; }
+
+.btndefaultBlog a {
+  font: 16px 'Open Sans';
+  font-weight: 600; }
+
 /*# sourceMappingURL=style.css.map */

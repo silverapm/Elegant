@@ -46,6 +46,7 @@ header {
           font-weight: 300;
           text-transform: uppercase;
         }
+
         a:hover {
           color: #2b669a;
           transition: 0.3s;
@@ -110,7 +111,7 @@ header {
 
 .owl-carousel {
   position: relative;
-  background-color: rgba(12,78,154,.6);
+  background-color: rgba(12, 78, 154, .6);
   padding-bottom: 2px;
 
 }
@@ -494,39 +495,47 @@ footer .footercontainer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   .img1 {
     content: "";
     background-image: url("../images/abountUscontent1.jpg");
     width: 460px;
     height: 300px;
   }
+
   .par1 {
     background-color: #d3b000;
     width: 240px;
     height: 270px;
     padding: 30px 30px 0 30px;
-    p{
+
+    p {
       color: white;
       text-align: left;
       font: 25px/32px 'Open Sans';
       font-weight: 300;
     }
   }
+
   .par2 {
     padding: 47px 30px 0 47px;
     background-color: #f9f9f9;
+
     p {
       text-align: left;
       font: 20px/32px 'Open Sans';
     }
+
     width: 387px;
     height: 253px;
   }
+
   .par3 {
     background-color: #212121;
     width: 270px;
     height: 270px;
     padding: 30px 0 0 30px;
+
     p {
       color: white;
       text-align: left;
@@ -545,32 +554,39 @@ footer .footercontainer {
   max-width: 1150px;
   background-color: #f9f9f9;
   padding: 60px;
+
   h3 {
     font: 45px/65px 'open sans';
     font-weight: 600;
   }
+
   .projectsection__par {
     margin-top: 130px;
     margin-bottom: 100px;
     max-width: 665px;
+
     p {
       text-align: left;
       font: 20px/32px 'open sans';
       font-weight: 300;
     }
   }
+
   img {
     margin-bottom: 20px;
   }
 }
+
 .btnbox {
   display: flex;
   justify-content: space-between;
   padding: 0 60px 0 60px;
-  .linkalone{
+
+  .linkalone {
     margin-left: 0;
     margin-right: 0;
   }
+
   a {
     text-decoration: none;
     display: inline-block;
@@ -584,4 +600,55 @@ footer .footercontainer {
 
 .btndefault {
   border-color: rgba(0, 0, 0, 0.4);
+}
+
+.titlesection {
+  padding-top: 64px;
+  max-width: 1025px;
+  margin: auto;
+  background-color: #f9f9f9;
+
+  .titlesection__post {
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+
+    .titlesection__post__first {
+      .btndefault {
+        a {
+          text-decoration: none;
+          color: black;
+          font: 16px 'Open Sans';
+          font-weight: 600;
+        }
+      }
+
+      h3 {
+        margin-top: 30px;
+        font: 30px/50px 'Open Sans';
+        font-weight: 300;
+        color: black;
+      }
+
+      p {
+        font: 16px/25px 'Open Sans';
+        font-weight: 300;
+        color: #021725;
+
+        span {
+          font: 15px/50px 'Open Sans';
+          color: #d3b000;
+        }
+      }
+    }
+  }
+}
+
+.blogcontainer {
+  margin-top: 75px;
+}
+
+.btndefaultBlog a{
+  font: 16px 'Open Sans';
+  font-weight: 600;
 }
