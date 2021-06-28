@@ -522,4 +522,26 @@ footer .footercontainer {
   font: 16px 'Open Sans';
   font-weight: 600; }
 
+.workcontainer {
+  margin-top: 128px;
+  margin-bottom: 20px;
+  max-width: 1280px;
+  text-align: center; }
+  .workcontainer .workparagraph {
+    max-width: 760px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 137px; }
+    .workcontainer .workparagraph p {
+      font: 18px/32px 'Open Sans';
+      color: #021725; }
+  .workcontainer .workparagraphimages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .workcontainer .workparagraphimages .smallimg {
+      width: 300px;
+      height: 300px; }
+
 /*# sourceMappingURL=style.css.map */
