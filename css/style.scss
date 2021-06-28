@@ -679,3 +679,54 @@ footer .footercontainer {
     }
   }
 }
+
+.aboutwraper {
+  max-width: 1280px;
+  padding-top: 170px;
+  .aboutwrparagr {
+    max-width: 760px;
+    margin: auto;
+    padding-bottom: 160px;
+    p {
+      font: 18px/32px 'Open Sans';
+      color: #021725;
+    }
+  }
+  .aboutwrapercontent {
+    display: flex;
+    justify-content: space-between;
+    .aboutwrapercontent__img {
+      max-width: 620px;
+    }
+    .aboutwrapercontent__listtext {
+      h3 {
+        font: 45px 'Open Sans';
+        color: #505d68;
+        margin-bottom: 20px;
+      }
+      width: 100%;
+      max-width: 540px;
+      background-color: #f9f9f9;
+      padding: 50px 40px 0 40px;
+      .aboutwrapercontent__listtext__content {
+        display: flex;
+        justify-content: space-between;
+        .listtext__content1 {
+          max-width: 210px;
+          p {
+            font: 18px/32px 'Open Sans';
+            color: #021725;
+          }
+        }
+        .listtext__content2 {
+          max-width: 210px;
+          padding-top: 80px;
+          ul li {
+            font: 18px/32px 'Open Sans';
+            color: #021725;
+          }
+        }
+      }
+    }
+  }
+}
